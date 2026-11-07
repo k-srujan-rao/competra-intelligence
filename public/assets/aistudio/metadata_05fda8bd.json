@@ -1,0 +1,6 @@
+{
+  "name": "COMPETRA AI",
+  "description": "AI-Powered Competitor Monitoring, Historical Memory & Strategic Intelligence Platform powered by Hindsight long-term memory engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

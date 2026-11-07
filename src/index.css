@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --obsidian-bg: #060709;
+    --obsidian-card: #0b0c10;
+    --obsidian-surface: #11131a;
+    --obsidian-border: #23211a;
+    --gold-primary: #d4af37;
+    --gold-light: #f5e29f;
+    --gold-muted: #997819;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #060709;
+    color: #f7f5ed;
+  }
+}
+
+/* Custom Obsidian Gold Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060709;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #23211a;
+  border-radius: 9999px;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b3524;
+}
+
+/* Obsidian Gold Visual Accents */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fff2b2 0%, #e5c158 50%, #b8860b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-btn {
+  background: linear-gradient(135deg, #f6d365 0%, #d4af37 60%, #aa7c11 100%);
+  color: #060709;
+  font-weight: 700;
+  box-shadow: 0 4px 18px -2px rgba(212, 175, 55, 0.25);
+}
+
+.gold-gradient-btn:hover {
+  background: linear-gradient(135deg, #fae088 0%, #e2be46 60%, #b8860b 100%);
+}
+
+.obsidian-panel {
+  background-color: #0b0c10;
+  border: 1px solid #23211a;
+}
+
+.obsidian-card-hover {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.obsidian-card-hover:hover {
+  border-color: rgba(212, 175, 55, 0.35);
+  box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.7), 0 0 15px -3px rgba(212, 175, 55, 0.12);
+}
+
+/* Utility to hide scrollbar while preserving scroll functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
